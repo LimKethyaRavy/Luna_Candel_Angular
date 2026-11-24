@@ -1,0 +1,104 @@
+.site-footer {
+  background-color: #f2ece4; /* Warm sand tone */
+  border-top: 1px solid #e2d7c9;
+  color: #2c241e;
+}
+
+.footer-brand {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2c241e;
+  letter-spacing: 0.5px;
+}
+
+.footer-heading {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #a66238; /* Terracotta accent */
+}
+
+.footer-text {
+  font-size: 0.88rem;
+  color: #6e6056;
+  line-height: 1.6;
+}
+
+.text-terracotta {
+  color: #a66238;
+}
+
+/* Navigation Links */
+.footer-links a {
+  font-size: 0.88rem;
+  color: #4a3f37;
+  text-decoration: none;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #a66238;
+  padding-left: 3px;
+}
+
+/* Social Icons */
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #d5c7b6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2c241e;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  background-color: #a66238;
+  border-color: #a66238;
+  color: #ffffff;
+}
+
+/* Studio Location Map */
+.footer-map-wrapper {
+  border: 1px solid #d5c7b6;
+  background-color: #e6dccf;
+  line-height: 0; /* Removes tiny bottom gap under iframes */
+}
+
+.footer-map-wrapper iframe {
+  filter: sepia(12%) contrast(96%); /* Subtle warm tint to match your palette */
+  transition: filter 0.3s ease;
+}
+
+.footer-map-wrapper:hover iframe {
+  filter: none; /* Full color on hover */
+}
+
+/* Newsletter Form */
+.newsletter-input {
+  background-color: #ffffff;
+  border: 1px solid #d5c7b6;
+  font-size: 0.88rem;
+  color: #2c241e;
+  padding: 0.55rem 0.85rem;
+}
+
+.newsletter-input:focus {
+  border-color: #a66238;
+  box-shadow: 0 0 0 0.2rem rgba(166, 98, 56, 0.15);
+}
+
+.newsletter-btn {
+  background-color: #a66238;
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 500;
+  border: none;
+  padding: 0.55rem
+}

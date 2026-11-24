@@ -1,0 +1,121 @@
+<footer class="site-footer pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4 pb-5">
+      
+      <!-- Column 1: Brand & Socials -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <a href="javascript:void(0)" class="footer-brand d-inline-block mb-3 text-decoration-none">
+          Luna.
+        </a>
+        <p class="footer-text mb-4">
+          Hand-poured natural soy wax candles crafted in small batches to bring warmth, calm, and intention to your everyday spaces.
+        </p>
+        <div class="d-flex gap-2">
+          <a href="javascript:void(0)" class="social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="javascript:void(0)" class="social-icon" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="javascript:void(0)" class="social-icon" aria-label="Pinterest">
+            <i class="fa-brands fa-pinterest-p"></i>
+          </a>
+          <a href="javascript:void(0)" class="social-icon" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links (Shop & About combined neatly) -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="row">
+          <div class="col-6">
+            <h6 class="footer-heading mb-3">Shop</h6>
+            <ul class="list-unstyled footer-links mb-0">
+              @for (link of shopLinks; track link) {
+                <li class="mb-2">
+                  <a href="javascript:void(0)">{{ link }}</a>
+                </li>
+              }
+            </ul>
+          </div>
+          <div class="col-6">
+            <h6 class="footer-heading mb-3">About</h6>
+            <ul class="list-unstyled footer-links mb-0">
+              @for (link of companyLinks; track link) {
+                <li class="mb-2">
+                  <a href="javascript:void(0)">{{ link }}</a>
+                </li>
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3: Studio Location & Mini Map -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h6 class="footer-heading mb-3">Visit Our Studio</h6>
+        <p class="footer-text mb-2">
+          <i class="fa-solid fa-location-dot me-2 text-terracotta"></i>
+          Street 240, Daun Penh, Phnom Penh
+        </p>
+        <p class="footer-text small mb-3">
+          Mon – Sun: 9:00 AM – 7:00 PM
+        </p>
+        
+        <!-- Rounded Map Container -->
+        <div class="footer-map-wrapper rounded-3 overflow-hidden shadow-sm">
+          <iframe 
+            [src]="mapUrl" 
+            width="100%" 
+            height="140" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Luna Studio Location">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Column 4: Newsletter Signup -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h6 class="footer-heading mb-3">Join the Scent Club</h6>
+        <p class="footer-text mb-3">
+          Receive 10% off your first order, seasonal scent previews, and candle care tips.
+        </p>
+
+        @if (!subscribed) {
+          <form (ngSubmit)="onSubscribe()" class="d-flex flex-column gap-2">
+            <!-- <input 
+              type="email" 
+              /* [(ngModel)]="newsletterEmail"  */
+              name="email"
+              class="form-control newsletter-input" 
+              placeholder="Enter your email" 
+              required> -->
+            <button type="submit" class="btn newsletter-btn w-100">
+              Join
+            </button>
+          </form>
+        } @else {
+          <div class="alert-subscribed py-2 px-3 rounded-2">
+            <i class="fa-solid fa-check me-2"></i> Thank you for joining!
+          </div>
+        }
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom pt-4 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+      <p class="copyright-text mb-0">
+        &copy; {{ currentYear }} Luna Candles. All rights reserved.
+      </p>
+      <div class="d-flex gap-4 bottom-links">
+        <a href="javascript:void(0)">Privacy Policy</a>
+        <a href="javascript:void(0)">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>

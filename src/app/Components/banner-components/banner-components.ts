@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-
+interface FeatureItem {
+  icon: string,
+  title: string,
+  subtitle: string
+}
 @Component({
   selector: 'app-banner-components',
   imports: [],
@@ -70,4 +74,29 @@ export class BannerComponents {
       imageAlt: 'A beautifully packaged scented candle gift',
     },
   ];
+
+  feature : FeatureItem[] = [
+    {
+      icon: 'fa-solid fa-leaf',
+      title: 'Natural soy wax',
+      subtitle: 'Clean, even burn'
+    },
+    {
+      icon: 'fa-regular fa-hand',
+      title: 'Hand-poured',
+      subtitle: 'Small batches'
+    },
+    {
+      icon: 'fa-solid fa-fire-flame-curved',
+      title: '40+ hour burn',
+      subtitle: 'Lasts longer'
+    },
+    {
+      icon: 'fa-solid fa-truck-fast',
+      title: 'Free shipping',
+      subtitle: 'Orders over $50'
+    }
+  ];
+  
+
 }

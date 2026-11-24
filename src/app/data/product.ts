@@ -44,7 +44,7 @@ export const products: Product[] = [
     reviews: 124,
     is_active: true,
     tags: ['Best Seller', 'Popular'],
-    image: '/assets/img/product/vanilla-dream.jpg',
+    image: '/assets/img/product/Product-Vanilar-Candel.jpg',
   },
   {
     product_id: 2,
@@ -64,7 +64,7 @@ export const products: Product[] = [
     reviews: 86,
     is_active: true,
     tags: ['Best Seller'],
-    image: '/assets/img/product/midnight-woods.jpg',
+    image: '/assets/img/product/Midnightwood.jpg',
   },
   {
     product_id: 3,
@@ -85,7 +85,7 @@ export const products: Product[] = [
     reviews: 98,
     is_active: true,
     tags: ['New Arrival'],
-    image: '/assets/img/product/pure-serenity.jpg',
+    image: 'https://i.etsystatic.com/50478273/r/il/8df681/8113272087/il_570xN.8113272087_5y0y.jpg',
   },
   {
     product_id: 4,
@@ -125,7 +125,7 @@ export const products: Product[] = [
     reviews: 105,
     is_active: true,
     tags: ['Best Seller', 'Popular'],
-    image: '/assets/img/product/ocean-breeze.jpg',
+    image: 'https://www.tuesdaymorning.com/cdn/shop/files/ocean-breeze-candle-candles-ocean-18-clr-6459042.jpg?v=1768291501&width=1214',
   },
   {
     product_id: 6,
@@ -145,7 +145,7 @@ export const products: Product[] = [
     reviews: 54,
     is_active: true,
     tags: ['Premium', 'New Arrival'],
-    image: '/assets/img/product/amber-glow.jpg',
+    image: 'https://www.candleberry.com/cdn/shop/files/amber-glow-kindred-large-jar-candle-kindred-large-jar-the-candleberry-candle-company-7781510.webp?v=1792008973',
   },
   {
     product_id: 7,
@@ -165,7 +165,7 @@ export const products: Product[] = [
     reviews: 91,
     is_active: true,
     tags: ['Best Seller'],
-    image: '/assets/img/product/lavender-dreams.jpg',
+    image: 'https://www.galwaycrystal.ie/cdn/shop/files/GCD44LAVENDERDREAM-SCENTEDCANDLE230G-MOOD.jpg?v=1770734883&width=1321',
   },
   {
     product_id: 8,
@@ -185,7 +185,7 @@ export const products: Product[] = [
     reviews: 63,
     is_active: true,
     tags: ['New Arrival'],
-    image: '/assets/img/product/citrus-sunrise.jpg',
+    image: 'https://www.dwhome.com/cdn/shop/products/Citrus_Sunrise.jpg?v=1529013944',
   },
   {
     product_id: 9,
@@ -286,7 +286,7 @@ export const products: Product[] = [
     reviews: 42,
     is_active: true,
     tags: ['Premium', 'Best Seller'],
-    image: '/assets/img/product/white-jasmine.jpg',
+    image: 'https://m.media-amazon.com/images/I/51xfMgYvADL.jpg',
   },
   {
     product_id: 14,
@@ -326,7 +326,7 @@ export const products: Product[] = [
     reviews: 59,
     is_active: true,
     tags: ['New Arrival'],
-    image: '/assets/img/product/forest-escape.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO7CfHy0LhJoC8GF1dzN9Ny712Jno9Cagj65KWhHtcaN__gVO6IlO5A_w&s=10',
   },
   {
     product_id: 16,

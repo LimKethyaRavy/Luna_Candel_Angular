@@ -1,70 +1,53 @@
 
-<section class="best-seller-section py-5">
-  <div class="container">
+<section class="best-seller-section">
+  <div class="container best-seller-container">
 
-    <!-- Section Heading -->
-    <div class="section-heading text-center mb-5">
-      <span class="section-subtitle">OUR CUSTOMERS' FAVORITES</span>
-      <h2>Best Sellers<span>.</span></h2>
-      <p>Scents everyone is falling in love with.</p>
+
+    <div class="seller-header">
+      <div>
+        <h2>Best Sellers</h2>
+        <p>Loved by our community.</p>
+      </div>
+
+      <a routerLink="/shop" class="view-all">
+        View all products
+        <i class="bi bi-arrow-right"></i>
+      </a>
     </div>
 
-    <!-- Product Grid -->
-    <div class="row g-4">
+  
+    <div class="row g-3">
 
-      @for (product of bestSellers; track product.product_id) {
+      @for (product of bestSellers | slice: 0:4; track product.product_id) {
 
-        <div class="col-6 col-lg-3">
+        <div class="col-6 col-md-4 col-lg-3">
 
-          <div class="candle-card">
+          <div class="seller-card">
 
-            <!-- Image -->
-            <div class="candle-image-wrapper">
+      
+            <div class="seller-image">
 
               <img
                 [src]="product.image"
                 [alt]="product.product_name"
-                class="candle-image"
               />
 
-              <!-- Badge -->
-              <span class="best-seller-badge">
-                BEST SELLER
-              </span>
-
-              <!-- Hover Action -->
-              <div class="candle-overlay">
-                <button class="quick-view-btn">
-                  Discover Scent
-                  <i class="bi bi-arrow-up-right"></i>
-                </button>
-              </div>
+              <button class="wishlist-btn"
+                aria-label="Add to wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
 
             </div>
 
-            <!-- Product Details -->
-            <div class="candle-info">
+            <div class="seller-info">
 
-              <div class="d-flex justify-content-between align-items-center">
-                <span class="candle-category">
-                  {{ product.category }}
-                </span>
+              <span class="seller-category">
+                {{ product.fragrance_family }}
+              </span>
 
-                <span class="candle-rating">
-                  <i class="bi bi-star-fill"></i>
-                  {{ product.rating }}
-                </span>
-              </div>
+              <h5>{{ product.product_name }}</h5>
 
-              <h5 class="candle-name">
-                {{ product.product_name }}
-              </h5>
-
-              <p class="candle-description">
-                {{ product.fragrance_notes.join(' · ') }}
-              </p>
-
-              <div class="candle-price">
+              <div class="seller-price">
                 <span>${{ product.price.toFixed(2) }}</span>
 
                 @if (product.original_price !== null) {
@@ -73,6 +56,12 @@
               </div>
 
             </div>
+
+       
+            <button class="add-cart-btn">
+              <i class="bi bi-cart3"></i>
+              Add to Cart
+            </button>
 
           </div>
 
@@ -84,4 +73,3 @@
 
   </div>
 </section>
-
