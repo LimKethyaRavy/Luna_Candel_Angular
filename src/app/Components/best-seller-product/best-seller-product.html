@@ -1,0 +1,87 @@
+
+<section class="best-seller-section py-5">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="section-heading text-center mb-5">
+      <span class="section-subtitle">OUR CUSTOMERS' FAVORITES</span>
+      <h2>Best Sellers<span>.</span></h2>
+      <p>Scents everyone is falling in love with.</p>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="row g-4">
+
+      @for (product of bestSellers; track product.product_id) {
+
+        <div class="col-6 col-lg-3">
+
+          <div class="candle-card">
+
+            <!-- Image -->
+            <div class="candle-image-wrapper">
+
+              <img
+                [src]="product.image"
+                [alt]="product.product_name"
+                class="candle-image"
+              />
+
+              <!-- Badge -->
+              <span class="best-seller-badge">
+                BEST SELLER
+              </span>
+
+              <!-- Hover Action -->
+              <div class="candle-overlay">
+                <button class="quick-view-btn">
+                  Discover Scent
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <!-- Product Details -->
+            <div class="candle-info">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="candle-category">
+                  {{ product.category }}
+                </span>
+
+                <span class="candle-rating">
+                  <i class="bi bi-star-fill"></i>
+                  {{ product.rating }}
+                </span>
+              </div>
+
+              <h5 class="candle-name">
+                {{ product.product_name }}
+              </h5>
+
+              <p class="candle-description">
+                {{ product.fragrance_notes.join(' · ') }}
+              </p>
+
+              <div class="candle-price">
+                <span>${{ product.price.toFixed(2) }}</span>
+
+                @if (product.original_price !== null) {
+                  <del>${{ product.original_price.toFixed(2) }}</del>
+                }
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+</section>
+

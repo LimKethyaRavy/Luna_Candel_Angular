@@ -1,0 +1,314 @@
+:host {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  background: #fff;
+}
+
+
+.luna-announcement {
+  background: #f7f7f7;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  font-size: 12px;
+}
+
+.luna-announcement .container {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.luna-announcement p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.luna-announcement p i {
+  font-size: 12px;
+}
+
+.luna-announcement__links {
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.luna-announcement__links a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.luna-announcement__links a:hover {
+  color: #a66b45;
+}
+
+.luna-announcement__links span {
+  width: 1px;
+  height: 12px;
+  background: #ccc;
+}
+
+
+.luna-navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 0;
+}
+
+.luna-navbar .container {
+  min-height: 78px;
+}
+
+
+.luna-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 0;
+  color: #111;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.luna-logo__name {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+}
+
+.luna-logo__dot {
+  color: #a66b45;
+}
+
+.luna-logo__tag {
+  margin-top: 6px;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  color: #777;
+}
+
+
+.luna-navbar .navbar-nav {
+  gap: 8px;
+}
+
+.luna-navbar .nav-link {
+  position: relative;
+  padding: 29px 12px !important;
+  color: #555;
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.luna-navbar .nav-link:hover,
+.luna-navbar .nav-link.active {
+  color: #a66b45;
+}
+
+.luna-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background: #a66b45;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.luna-navbar .nav-link:hover::after,
+.luna-navbar .nav-link.active::after {
+  transform: scaleX(1);
+}
+
+
+
+.luna-search-form {
+  display: flex;
+  align-items: center;
+  width: 205px;
+  height: 40px;
+  background: #f7f7f7;
+  border: 1px solid #eee;
+  border-radius: 30px;
+  padding: 0 12px;
+  transition: border-color 0.2s ease;
+}
+
+.luna-search-form:focus-within {
+  border-color: #aaa;
+}
+
+.luna-search-input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #111;
+  font-size: 12px;
+}
+
+.luna-search-input::placeholder {
+  color: #999;
+}
+
+.luna-search-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #222;
+  cursor: pointer;
+}
+
+
+
+.navbar-actions {
+  align-items: center;
+  gap: 6px;
+  margin-left: 12px;
+}
+
+.nav-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #222;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.nav-icon:hover {
+  background: #f5f5f5;
+  color: #a66b45;
+}
+
+.cart-count {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 50%;
+  background: #a66b45;
+  color: #fff;
+  font-size: 10px;
+  line-height: 17px;
+  text-align: center;
+}
+
+
+
+.luna-mobile-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.luna-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 0;
+  box-shadow: none !important;
+}
+
+.luna-toggler__bar {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: #222;
+  transition: transform 0.2s ease;
+}
+
+
+.luna-search-form--mobile {
+  width: 100%;
+  margin: 12px 0 4px;
+}
+
+
+
+@media (max-width: 991.98px) {
+  .luna-navbar .container {
+    min-height: 68px;
+  }
+
+  .luna-navbar .navbar-collapse {
+    padding: 12px 0 18px;
+    border-top: 1px solid #eee;
+  }
+
+  .luna-navbar .navbar-nav {
+    gap: 0;
+  }
+
+  .luna-navbar .nav-link {
+    padding: 13px 0 !important;
+    font-size: 14px;
+  }
+
+  .luna-navbar .nav-link::after {
+    display: none;
+  }
+
+  .luna-navbar .nav-link.active {
+    font-weight: 600;
+  }
+
+  .luna-search-form--mobile {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .luna-announcement {
+    font-size: 11px;
+  }
+
+  .luna-announcement .container {
+    min-height: 32px;
+  }
+
+  .luna-announcement__links {
+    display: none;
+  }
+
+  .luna-logo__name {
+    font-size: 27px;
+  }
+
+  .luna-logo__tag {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+}

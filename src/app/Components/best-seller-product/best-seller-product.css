@@ -1,0 +1,213 @@
+
+/* SECTION */
+
+.best-seller-section {
+  background: #faf9f6;
+  padding: 90px 0 !important;
+}
+
+.section-heading {
+  margin-bottom: 45px;
+}
+
+.section-subtitle {
+  color: #9b866e;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 4vw, 46px);
+  color: #292720;
+  margin: 12px 0;
+}
+
+.section-heading h2 span {
+  color: #b28b65;
+}
+
+.section-heading p {
+  color: #89857e;
+  font-size: 14px;
+}
+
+
+/* PRODUCT CARD */
+
+.candle-card {
+  cursor: pointer;
+  height: 100%;
+}
+
+.candle-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: #efede7;
+  border-radius: 5px;
+}
+
+.candle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(.2,.7,.3,1);
+}
+
+/* IMAGE ZOOM */
+
+.candle-card:hover .candle-image {
+  transform: scale(1.08);
+}
+
+
+/* BEST SELLER BADGE */
+
+.best-seller-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #f9f7f1;
+  color: #51483d;
+  padding: 8px 12px;
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+
+/* HOVER OVERLAY */
+
+.candle-overlay {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: all 0.35s ease;
+}
+
+.candle-card:hover .candle-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quick-view-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  background: #fffdf8;
+  color: #302d27;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.quick-view-btn:hover {
+  background: #302d27;
+  color: white;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.candle-info {
+  padding: 17px 2px;
+}
+
+.candle-category {
+  font-size: 11px;
+  color: #999184;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.candle-rating {
+  font-size: 11px;
+  color: #82715b;
+}
+
+.candle-rating i {
+  font-size: 9px;
+  color: #bd9665;
+  margin-right: 3px;
+}
+
+.candle-name {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  color: #302d27;
+  margin: 12px 0 6px;
+  transition: color 0.3s ease;
+}
+
+.candle-card:hover .candle-name {
+  color: #a17b55;
+}
+
+.candle-description {
+  color: #969087;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.candle-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #302d27;
+}
+
+.candle-price del {
+  color: #aaa49a;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+  .best-seller-section {
+    padding: 55px 0 !important;
+  }
+
+  .candle-name {
+    font-size: 16px;
+  }
+
+  .best-seller-badge {
+    top: 9px;
+    left: 9px;
+    padding: 6px 7px;
+    font-size: 8px;
+  }
+
+  .candle-overlay {
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
+  }
+
+  .quick-view-btn {
+    padding: 9px 5px;
+    font-size: 10px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .candle-image,
+  .candle-overlay,
+  .candle-name,
+  .quick-view-btn {
+    transition: none;
+  }
+}
