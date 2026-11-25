@@ -1,0 +1,180 @@
+@if (product) {
+  <div class="product-page">
+
+    <!-- Breadcrumb -->
+    <div class="container">
+      <nav class="breadcrumb-custom">
+        <a routerLink="/">Home</a>
+        <span>/</span>
+        <a routerLink="/shop">Shop All</a>
+        <span>/</span>
+        <span>{{ product.product_name }}</span>
+      </nav>
+    </div>
+
+    <!-- Product Information -->
+    <section class="container product-section">
+      <div class="row g-4 g-lg-5">
+
+        <!-- Single Product Image -->
+        <div class="col-12 col-lg-6">
+          <div class="product-image">
+            <img
+              [src]="product.image"
+              [alt]="product.product_name"
+            />
+          </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-12 col-lg-6">
+          <div class="product-info">
+
+            <span class="product-category">
+              {{ product.category || 'COZY & WARM' }}
+            </span>
+
+            <h1>{{ product.product_name }}</h1>
+
+            <div class="product-price">
+              <span>${{ product.price }}</span>
+              <span class="product-rating">
+                ★ 4.9 · 128 reviews
+              </span>
+            </div>
+
+            <p class="product-description">
+              {{ product.description }}
+            </p>
+
+            <!-- Size Options -->
+
+            <div class="main-option">
+
+                <div class="product-option">
+              <label>SIZE</label>
+
+              <div class="size-options">
+                <p class="size-btn">
+
+                    {{product.weight}}
+
+                </p>
+         
+             
+              </div>
+
+            </div>
+            
+            </div>
+
+            <!-- Quantity and Purchase Buttons -->
+            <div class="purchase-actions">
+
+              <div class="quantity-control">
+                <span>−</span>
+                <span>1</span>
+                <span>+</span>
+              </div>
+
+              <button type="button" class="add-cart-btn">
+                Add to cart
+              </button>
+
+              <button
+                type="button"
+                class="wishlist-btn"
+                aria-label="Add to wishlist"
+              >
+                ♡
+              </button>
+
+            </div>
+
+            <!-- Product Benefits -->
+            <div class="product-benefits">
+              <span>Natural soy wax</span>
+              <span>40+ hour burn</span>
+              <span>Hand poured</span>
+              <span>Free shipping over $50</span>
+            </div>
+
+            <!-- Product Details -->
+            <div class="product-details">
+
+              <div class="detail-row">
+                <span>Scent notes</span>
+                <span>
+                    {{product.fragrance_notes}}
+                </span>
+              </div>
+
+              <div class="detail-row">
+                <span>Burn & care</span>
+                <span>
+                    {{product.burn_time}}
+                </span>
+              </div>
+
+              <div class="detail-row">
+                <span>Shipping & returns</span>
+                <span>3–5 days</span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="container related-section">
+
+      <div class="section-heading">
+        <h2>You may also like</h2>
+        <a routerLink="/shop">View all</a>
+      </div>
+
+      <div class="row g-3">
+
+       @for (item of relatedProduct; track item.product_id) {
+
+  <div class="col-6 col-md-3">
+
+    <a
+      class="related-card"
+      [routerLink]="['/product', product.product_id]"
+    >
+
+      <div class="related-image">
+        <img
+          [src]="item.image"
+          [alt]="item.product_name"
+        />
+      </div>
+
+      <h3>{{ item.product_name }}</h3>
+
+      <p>${{ item.price }}</p>
+
+    </a>
+
+  </div>
+
+}
+
+</div>
+    </section>
+
+  </div>
+
+} @else {
+
+  <div class="container not-found">
+    <h2>Product not found</h2>
+    <a routerLink="/shop">Back to shop</a>
+  </div>
+
+}

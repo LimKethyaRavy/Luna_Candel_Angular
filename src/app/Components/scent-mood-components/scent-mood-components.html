@@ -22,11 +22,11 @@
         <div class="row g-3">
           @for (mood of moods; track mood.title) {
             <div class="col-12 col-md-4">
-              <a href="javascript:void(0)" class="mood-card d-block position-relative overflow-hidden rounded-3 text-decoration-none">
+              <a href="javascript:void(0)" class="mood-card d-block position-relative overflow-hidden rounded-3 text-decoration-none" >
                 <!-- Background Image -->
                 <img [src]="mood.imageUrl" [alt]="mood.title" class="mood-img w-100 h-100 object-fit-cover">
                 
-                <!-- Dark Gradient Overlay for Text Readability -->
+          
                 <div class="mood-overlay position-absolute bottom-0 start-0 w-100 p-4 d-flex flex-column justify-content-end">
                   <h4 class="card-title text-white mb-1">{{ mood.title }}</h4>
                   <p class="card-desc text-white-50 mb-3">{{ mood.description }}</p>

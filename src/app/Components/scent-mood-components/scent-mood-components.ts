@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 interface ScentMood {
   title: string,
@@ -8,7 +9,7 @@ interface ScentMood {
 }
 @Component({
   selector: 'app-scent-mood-components',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './scent-mood-components.html',
   styleUrl: './scent-mood-components.css',
 })
