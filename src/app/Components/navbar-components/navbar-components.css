@@ -207,6 +207,13 @@
   color: #a66b45;
 }
 
+.active {
+
+  background: #f5f5f5;
+  color: #a66b45;
+
+}
+
 .cart-count {
   position: absolute;
   top: 2px;

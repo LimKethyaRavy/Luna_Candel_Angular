@@ -56,25 +56,37 @@
       <ul class="navbar-nav mx-auto">
 
         <li class="nav-item">
-          <a class="nav-link active" href="/">
+          <a class="nav-link" routerLink="/"
+          [class.active] ="isActiveLink('home')"
+          (click)="OnSelectLink('home')"
+          >
             Home
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/shop">
+          <a class="nav-link" routerLink="/shop"
+          [class.active] ="isActiveLink('shop')"
+           (click)="OnSelectLink('shop')"
+          >
             Shop All
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/our-story">
+          <a class="nav-link" routerLink="/about-us"
+          [class.active] ="isActiveLink('about-us')"
+          (click)="OnSelectLink('about-us')"
+          >
             About Us
           </a>
         </li>
 
            <li class="nav-item">
-          <a class="nav-link" href="/our-story">
+          <a class="nav-link" routerLink="/contact"
+          [class.active] ="isActiveLink('contact')"
+          (click)="OnSelectLink('contact')"
+          > 
            Contact
           </a>
         </li>

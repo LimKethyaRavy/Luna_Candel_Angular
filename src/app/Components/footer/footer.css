@@ -17,7 +17,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #a66238; /* Terracotta accent */
+  color: #a66238; 
 }
 
 .footer-text {
@@ -30,7 +30,7 @@
   color: #a66238;
 }
 
-/* Navigation Links */
+
 .footer-links a {
   font-size: 0.88rem;
   color: #4a3f37;
@@ -43,7 +43,7 @@
   padding-left: 3px;
 }
 
-/* Social Icons */
+
 .social-icon {
   width: 36px;
   height: 36px;
@@ -77,10 +77,10 @@
 }
 
 .footer-map-wrapper:hover iframe {
-  filter: none; /* Full color on hover */
+  filter: none;
 }
 
-/* Newsletter Form */
+
 .newsletter-input {
   background-color: #ffffff;
   border: 1px solid #d5c7b6;

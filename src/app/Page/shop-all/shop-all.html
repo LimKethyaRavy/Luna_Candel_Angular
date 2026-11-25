@@ -1,0 +1,72 @@
+
+<section class="best-seller-section">
+  <div class="container best-seller-container">
+
+
+    <div class="seller-header">
+      <div>
+        <h2>Shop for all candel</h2>
+        <p>Loved by our community.</p>
+      </div>
+
+     
+    </div>
+
+  
+    <div class="row g-3">
+
+      @for (product of filterAll; track product.product_id) {
+
+        <div class="col-6 col-md-4 col-lg-3">
+
+          <div class="seller-card">
+
+      
+            <div class="seller-image">
+
+              <img
+                [src]="product.image"
+                [alt]="product.product_name"
+              />
+
+              <button class="wishlist-btn"
+                aria-label="Add to wishlist">
+                <i class="bi bi-heart"></i>
+              </button>
+
+            </div>
+
+            <div class="seller-info">
+
+              <span class="seller-category">
+                {{ product.fragrance_family }}
+              </span>
+
+              <h5>{{ product.product_name }}</h5>
+
+              <div class="seller-price">
+                <span>${{ product.price.toFixed(2) }}</span>
+
+                @if (product.original_price !== null) {
+                  <del>${{ product.original_price.toFixed(2) }}</del>
+                }
+              </div>
+
+            </div>
+
+       
+            <button class="add-cart-btn">
+              <i class="bi bi-cart3"></i>
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+</section>

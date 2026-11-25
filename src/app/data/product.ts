@@ -105,7 +105,7 @@ export const products: Product[] = [
     reviews: 72,
     is_active: true,
     tags: ['Sale', 'Limited Edition'],
-    image: '/assets/img/product/rose-garden.jpg',
+    image: 'https://www.shopplanted.com/cdn/shop/files/CandlewithRosesUnlit_796e2bd1-5ce8-4f2d-b3c9-11c8229a9b0c_1254x.png?v=1782155503',
   },
   {
     product_id: 5,
@@ -205,7 +205,7 @@ export const products: Product[] = [
     reviews: 48,
     is_active: true,
     tags: ['Premium'],
-    image: '/assets/img/product/sandalwood-mist.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ9NNr0w-KArndKJhM3BSy_wBXfLMJdlE3sKTl9Kc6ig&s=10',
   },
   {
     product_id: 10,
@@ -225,7 +225,7 @@ export const products: Product[] = [
     reviews: 57,
     is_active: true,
     tags: ['Sale'],
-    image: '/assets/img/product/sweet-peony.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLfWYnvp3uX-ZH12sHV-CR9g_b9uDhXOlTEOxC6BadAnGh00hx4gYEHHuL&s=10',
   },
   {
     product_id: 11,
@@ -246,7 +246,7 @@ export const products: Product[] = [
     reviews: 79,
     is_active: true,
     tags: ['Popular'],
-    image: '/assets/img/product/coconut-paradise.jpg',
+    image: 'https://thegreenjunglebeautyshop.com/cdn/shop/files/the-potion-cosmetics-paradise-soy-coconut-beeswax-candle-the-green-jungle-beauty-shop_c116d282-1339-4a25-abf3-61d6fb07aca7.webp?v=1781706242',
   },
   {
     product_id: 12,
@@ -266,7 +266,7 @@ export const products: Product[] = [
     reviews: 68,
     is_active: true,
     tags: ['Limited Edition'],
-    image: '/assets/img/product/autumn-spice.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSU59dMqQW62ebgSlY9C8ILTsLr-6qkgMNbX0O7qSygmQ-wMyEDkQxhnl5&s=10',
   },
   {
     product_id: 13,
@@ -306,7 +306,7 @@ export const products: Product[] = [
     reviews: 113,
     is_active: true,
     tags: ['Popular'],
-    image: '/assets/img/product/coffee-morning.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3bP95Cf86MilfW94iTN98zYEGWwicXZ02GY5Bs3c1hBqPfjBFdNlnDhM&s=10',
   },
   {
     product_id: 15,
@@ -346,7 +346,7 @@ export const products: Product[] = [
     reviews: 74,
     is_active: true,
     tags: ['Sale'],
-    image: '/assets/img/product/berry-bliss.jpg',
+    image: 'https://res.cloudinary.com/dizexseir/image/upload/v1706581218/ProImages/ueuwaieejqylghpmebre.jpg',
   },
   {
     product_id: 17,
@@ -366,7 +366,7 @@ export const products: Product[] = [
     reviews: 38,
     is_active: true,
     tags: ['Premium', 'Limited Edition'],
-    image: '/assets/img/product/golden-honey.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ8e-Dso9LA2cRYknXhQOp2yc15LaCqEOzh7Lr1NZmg3QpLK-yGZhf22wa&s=10',
   },
   {
     product_id: 18,
@@ -386,7 +386,7 @@ export const products: Product[] = [
     reviews: 52,
     is_active: true,
     tags: ['New Arrival'],
-    image: '/assets/img/product/lemon-verbena.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNNB4Wil8gbB0BYQJXL3pUXZxSTMkuNjebC-cj0f9Frs4zR8Fyc4ND0z8&s=10',
   },
   {
     product_id: 19,
@@ -406,7 +406,7 @@ export const products: Product[] = [
     reviews: 89,
     is_active: true,
     tags: ['Premium', 'Sale'],
-    image: '/assets/img/product/velvet-rose.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVNGbSEA8r-ry3m-IwssfqjxWTuhDrU0vLaGmkrMvBvNwddYHGGnW-206g&s=10',
   },
   {
     product_id: 20,
@@ -426,6 +426,6 @@ export const products: Product[] = [
     reviews: 67,
     is_active: true,
     tags: ['Popular'],
-    image: '/assets/img/product/moonlight-musk.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp8eHACWB9NjfF7L6ParUFEneGsnoFN3-V05tqSmX4Txcwg0NHsLvvc6vY&s=10',
   },
 ];
