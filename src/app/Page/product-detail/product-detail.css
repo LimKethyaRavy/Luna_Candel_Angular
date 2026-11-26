@@ -9,7 +9,7 @@
   padding-bottom: 70px;
 }
 
-/* Breadcrumb */
+
 
 .breadcrumb-custom {
   display: flex;
@@ -30,13 +30,13 @@
   color: #a76a43;
 }
 
-/* Main product layout */
+
 
 .product-section {
   padding-bottom: 45px;
 }
 
-/* Product image */
+
 
 .product-image {
   width: 100%;
@@ -58,7 +58,7 @@
   transform: scale(1.03);
 }
 
-/* Product information */
+
 
 .product-info {
   padding-top: 5px;
@@ -103,8 +103,6 @@
   margin-bottom: 24px;
 }
 
-/* Size options */
-
 .product-option label {
   display: block;
   font-size: 11px;
@@ -134,7 +132,7 @@
   border-color: #a76a43;
 }
 
-/* Purchase actions */
+
 
 .purchase-actions {
   display: flex;
@@ -184,7 +182,7 @@
   cursor: pointer;
 }
 
-/* Benefits */
+
 
 .product-benefits {
   display: flex;
@@ -199,7 +197,7 @@
   color: #75685d;
 }
 
-/* Product details */
+
 
 .product-details {
   margin-top: 8px;
@@ -220,7 +218,7 @@
   text-align: right;
 }
 
-/* Related products */
+
 
 .related-section {
   padding-top: 30px;
@@ -284,7 +282,7 @@
   margin: 0;
 }
 
-/* Not found */
+
 
 .not-found {
   text-align: center;

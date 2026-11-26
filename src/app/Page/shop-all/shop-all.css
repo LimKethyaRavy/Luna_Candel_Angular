@@ -1,5 +1,5 @@
 
-/* BEST SELLER SECTION */
+
 
 .best-seller-section {
   padding: 55px 0;
@@ -8,7 +8,7 @@
 }
 
 
-/* HEADER */
+
 
 .seller-header {
   display: flex;
@@ -46,7 +46,7 @@
 }
 
 
-/* PRODUCT CARD */
+
 
 .seller-card {
   background: #f7f6f5;
@@ -63,7 +63,7 @@
 }
 
 
-/* PRODUCT IMAGE */
+
 
 .seller-image {
   position: relative;
@@ -85,7 +85,7 @@
 }
 
 
-/* WISHLIST */
+
 
 .wishlist-btn {
   position: absolute;

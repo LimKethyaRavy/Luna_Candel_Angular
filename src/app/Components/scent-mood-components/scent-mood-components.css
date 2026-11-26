@@ -1,18 +1,17 @@
 .scent-section {
-  background-color: #f9f6f2; /* Warm cream background */
+  background-color: #f9f6f2; 
 }
 
-/* Left Column Typography */
 .eyebrow-text {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 1.5px;
-  color: #a66238; /* Terracotta accent matching your previous section */
+  color: #a66238; 
   text-transform: uppercase;
 }
 
 .section-heading {
-  font-family: 'Georgia', 'Times New Roman', serif; /* Classic serif look */
+  font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.85rem;
   font-weight: 500;
   color: #2c241e;
@@ -52,10 +51,10 @@
   transform: translateX(4px);
 }
 
-/* Right Mood Cards */
+
 .mood-card {
-  height: 320px; /* Adjust height if needed */
-  background-color: #e5ddd3; /* Fallback background while image loads */
+  height: 320px; 
+  background-color: #e5ddd3; 
 }
 
 .mood-img {

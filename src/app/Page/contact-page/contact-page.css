@@ -14,7 +14,7 @@
   min-height: 100vh;
 }
 
-/* Header Banner */
+
 .contact-header {
   background-color: var(--bg-cream);
   padding: 3.5rem 1rem 3rem;
@@ -37,12 +37,12 @@
   font-size: 0.9rem;
 }
 
-/* Main Content Area */
+
 .contact-content {
   padding: 3rem 0 4rem;
 }
 
-/* Left Info Cards */
+
 .info-card {
   background-color: var(--surface-card);
   border-radius: 12px;
@@ -77,7 +77,7 @@
   color: var(--text-muted);
 }
 
-/* Sample Map Container */
+
 .sample-map-box {
   background-color: #e7e2d8;
   border-radius: 14px;
@@ -85,7 +85,7 @@
   overflow: hidden;
 }
 
-/* Decorative Sample Map Geometry */
+
 .map-park {
   position: absolute;
   background-color: #dde3d7;
@@ -141,7 +141,7 @@
   transform-origin: left center;
 }
 
-/* Floating Studio Card */
+
 .map-callout {
   position: absolute;
   top: 18px;
@@ -166,7 +166,6 @@
   margin-top: 2px;
 }
 
-/* Center Pin */
 .map-pin-wrapper {
   position: absolute;
   top: 55%;

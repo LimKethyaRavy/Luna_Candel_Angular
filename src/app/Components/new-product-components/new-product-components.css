@@ -1,5 +1,4 @@
 
-/* BEST SELLER SECTION */
 
 .best-seller-section {
   padding: 55px 0;
@@ -7,8 +6,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-
-/* HEADER */
 
 .seller-header {
   display: flex;
@@ -46,7 +43,6 @@
 }
 
 
-/* PRODUCT CARD */
 
 .seller-card {
   background: #f7f6f5;
@@ -63,7 +59,6 @@
 }
 
 
-/* PRODUCT IMAGE */
 
 .seller-image {
   position: relative;
@@ -85,7 +80,7 @@
 }
 
 
-/* WISHLIST */
+
 
 .wishlist-btn {
   position: absolute;
@@ -105,8 +100,6 @@
   transform: scale(1.2);
 }
 
-
-/* PRODUCT INFORMATION */
 
 .seller-info {
   padding: 12px 10px 9px;
@@ -147,7 +140,7 @@
 }
 
 
-/* ADD TO CART */
+
 
 .add-cart-btn {
   width: 100%;
@@ -176,7 +169,6 @@
 }
 
 
-/* RESPONSIVE */
 
 @media (max-width: 576px) {
 

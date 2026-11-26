@@ -12,7 +12,6 @@
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* Typography */
 .editorial-title {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 600;
@@ -43,7 +42,7 @@
   font-size: 0.96rem;
 }
 
-/* Hero Section */
+
 .hero-section {
   position: relative;
   isolation: isolate;

@@ -1,5 +1,5 @@
 .site-footer {
-  background-color: #f2ece4; /* Warm sand tone */
+  background-color: #f2ece4; 
   border-top: 1px solid #e2d7c9;
   color: #2c241e;
 }
@@ -64,15 +64,15 @@
   color: #ffffff;
 }
 
-/* Studio Location Map */
+
 .footer-map-wrapper {
   border: 1px solid #d5c7b6;
   background-color: #e6dccf;
-  line-height: 0; /* Removes tiny bottom gap under iframes */
+  line-height: 0;
 }
 
 .footer-map-wrapper iframe {
-  filter: sepia(12%) contrast(96%); /* Subtle warm tint to match your palette */
+  filter: sepia(12%) contrast(96%);
   transition: filter 0.3s ease;
 }
 

@@ -13,13 +13,13 @@
   letter-spacing: -0.02em;
 }
 
-/* Warm Beige Surfaces */
+
 .shipping-banner,
 .summary-card {
   background-color: #f5f2ee;
 }
 
-/* Free Shipping Bar */
+
 .progress-track {
   width: 100%;
   height: 4px;
@@ -34,7 +34,7 @@
   border-radius: 999px;
 }
 
-/* Product Image Box */
+
 .item-thumbnail {
   width: 84px;
   height: 84px;
@@ -42,7 +42,7 @@
   flex-shrink: 0;
 }
 
-/* Minimal CSS Candle Placeholder (remove once using real images) */
+
 .candle-placeholder {
   width: 24px;
   height: 30px;
@@ -64,7 +64,7 @@
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
-/* Quantity Selector */
+
 .qty-pill {
   border-color: #e0dbd3 !important;
   background-color: #ffffff;
@@ -74,7 +74,7 @@
   color: #9e633a !important;
 }
 
-/* Primary Terracotta Button */
+
 .btn-terracotta {
   background-color: #9e633a;
   border-color: #9e633a;
