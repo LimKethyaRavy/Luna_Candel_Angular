@@ -30,7 +30,7 @@
  
     <div class="luna-mobile-actions d-lg-none">
 
-      <a href="/cart" class="nav-icon" aria-label="Shopping cart">
+      <a routerLink="/cart" class="nav-icon" aria-label="Shopping cart">
         <i class="fa-solid fa-bag-shopping"></i>
         <span class="cart-count">0</span>
       </a>
@@ -114,9 +114,11 @@
           <i class="fa-regular fa-user"></i>
         </a>
 
-        <a href="/cart" class="nav-icon" aria-label="Shopping cart">
+        <a routerLink="/cart" class="nav-icon" aria-label="Shopping cart">
           <i class="fa-solid fa-bag-shopping"></i>
-          <span class="cart-count">0</span>
+          <span class="cart-count">
+            {{(cartCount$ | async) || 0}}
+          </span>
         </a>
 
       </div>

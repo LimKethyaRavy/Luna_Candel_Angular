@@ -1,0 +1,89 @@
+/* Optional: Import Google Font in index.html for the exact editorial serif look */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap');
+
+.cart-wrapper {
+  background-color: #ffffff;
+  color: #1f1f1f;
+  min-height: 100vh;
+}
+
+.serif-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* Warm Beige Surfaces */
+.shipping-banner,
+.summary-card {
+  background-color: #f5f2ee;
+}
+
+/* Free Shipping Bar */
+.progress-track {
+  width: 100%;
+  height: 4px;
+  background-color: #e4ddd5;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #9e633a;
+  border-radius: 999px;
+}
+
+/* Product Image Box */
+.item-thumbnail {
+  width: 84px;
+  height: 84px;
+  background-color: #ebe6df;
+  flex-shrink: 0;
+}
+
+/* Minimal CSS Candle Placeholder (remove once using real images) */
+.candle-placeholder {
+  width: 24px;
+  height: 30px;
+  background-color: #f8f6f2;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.candle-placeholder::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 7px;
+  background-color: #e09132;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+/* Quantity Selector */
+.qty-pill {
+  border-color: #e0dbd3 !important;
+  background-color: #ffffff;
+}
+
+.qty-pill button:hover {
+  color: #9e633a !important;
+}
+
+/* Primary Terracotta Button */
+.btn-terracotta {
+  background-color: #9e633a;
+  border-color: #9e633a;
+  color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.btn-terracotta:hover {
+  background-color: #86522e;
+  border-color: #86522e;
+  color: #ffffff;
+}

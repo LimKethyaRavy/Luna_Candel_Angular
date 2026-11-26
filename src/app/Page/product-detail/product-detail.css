@@ -362,3 +362,41 @@
   }
 }
 
+
+.quantity-control .quantity-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  border: 1px solid #d8c8bb;
+  border-radius: 50%;
+
+  background: #fff;
+  color: #29221d;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.quantity-control .quantity-btn:hover:not(:disabled) {
+  background: #a96b45;
+  color: #fff;
+  border-color: #a96b45;
+}
+
+.quantity-control .quantity-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.quantity-control .quantity-value {
+  min-width: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #29221d;
+}

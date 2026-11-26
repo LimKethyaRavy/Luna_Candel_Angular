@@ -68,16 +68,23 @@
             
             </div>
 
-            <!-- Quantity and Purchase Buttons -->
+      
             <div class="purchase-actions">
 
               <div class="quantity-control">
-                <span>−</span>
-                <span>1</span>
-                <span>+</span>
+
+                <button class="quantity-btn" (click)="decreaseQty()" [disabled]="quantity <= 0">
+                  
+                  -
+                
+                </button>
+
+                <span class="quantity-value"> {{quantity}}</span>
+                <button class="quantity-btn" (click)="increaseQty()">+</button>
+
               </div>
 
-              <button type="button" class="add-cart-btn">
+              <button (click)="addToCart()" type="button" class="add-cart-btn">
                 Add to cart
               </button>
 
@@ -91,7 +98,7 @@
 
             </div>
 
-            <!-- Product Benefits -->
+    
             <div class="product-benefits">
               <span>Natural soy wax</span>
               <span>40+ hour burn</span>
@@ -99,7 +106,6 @@
               <span>Free shipping over $50</span>
             </div>
 
-            <!-- Product Details -->
             <div class="product-details">
 
               <div class="detail-row">
