@@ -45,11 +45,9 @@
               <h5>{{ product.product_name }}</h5>
 
               <div class="seller-price">
-                <span>${{ product.price.toFixed(2) }}</span>
-
-                @if (product.original_price !== null) {
-                  <del>${{ product.original_price.toFixed(2) }}</del>
-                }
+                <span>{{ product.price | currency}}</span>
+                 <span> ៛{{ product.price | tokhr}}</span>
+              
               </div>
 
             </div>

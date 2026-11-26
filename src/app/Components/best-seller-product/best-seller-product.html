@@ -48,17 +48,17 @@
               <h5>{{ product.product_name }}</h5>
 
               <div class="seller-price">
-                <span>${{ product.price.toFixed(2) }}</span>
+                <span>{{ product.price | currency }}</span>
+                <br>
+                 <span> ៛{{ product.price | tokhr}}</span>
 
-                @if (product.original_price !== null) {
-                  <del>${{ product.original_price.toFixed(2) }}</del>
-                }
+               
               </div>
 
             </div>
 
        
-            <button class="add-cart-btn">
+            <button class="add-cart-btn" (click)="addToCart(product, $event)">
               <i class="bi bi-cart3"></i>
               Add to Cart
             </button>

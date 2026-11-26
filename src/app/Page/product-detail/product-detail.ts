@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Product, products } from '../../data/product';
 import { Cart } from '../../services/cart';
+import { CurrencyPipe } from '@angular/common';
 @Component({
   selector: 'app-product-detail',
-  imports: [RouterLink],
+  imports: [RouterLink, CurrencyPipe],
   templateUrl: './product-detail.html',
   styleUrl: './product-detail.css',
 })

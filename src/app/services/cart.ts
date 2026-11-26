@@ -59,5 +59,12 @@ export class Cart {
   cartCount$ = this.cartItem$.pipe(
     map(item=> item.reduce((total, item) => total + item.quantity, 0))
   )
+
+  cartTotal$ = this.cartItem$.pipe(
+    map(items => items.reduce(
+      (total, item) => total + item.price * item.quantity,
+      0
+    ))
+  )
 }
 

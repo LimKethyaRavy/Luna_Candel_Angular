@@ -1,6 +1,5 @@
 @if (product) {
   <div class="product-page">
-
     <!-- Breadcrumb -->
     <div class="container">
       <nav class="breadcrumb-custom">
@@ -15,21 +14,15 @@
     <!-- Product Information -->
     <section class="container product-section">
       <div class="row g-4 g-lg-5">
-
         <!-- Single Product Image -->
         <div class="col-12 col-lg-6">
           <div class="product-image">
-            <img
-              [src]="product.image"
-              [alt]="product.product_name"
-            />
+            <img [src]="product.image" [alt]="product.product_name" />
           </div>
         </div>
 
-        <!-- Product Details -->
         <div class="col-12 col-lg-6">
           <div class="product-info">
-
             <span class="product-category">
               {{ product.category || 'COZY & WARM' }}
             </span>
@@ -37,68 +30,41 @@
             <h1>{{ product.product_name }}</h1>
 
             <div class="product-price">
-              <span>${{ product.price }}</span>
-              <span class="product-rating">
-                ★ 4.9 · 128 reviews
-              </span>
+              <span>{{ product.price | currency }}</span>
+              <span class="product-rating"> ★ 4.9 · 128 reviews </span>
             </div>
 
             <p class="product-description">
               {{ product.description }}
             </p>
 
-            <!-- Size Options -->
-
             <div class="main-option">
+              <div class="product-option">
+                <label>SIZE</label>
 
-                <div class="product-option">
-              <label>SIZE</label>
-
-              <div class="size-options">
-                <p class="size-btn">
-
-                    {{product.weight}}
-
-                </p>
-         
-             
+                <div class="size-options">
+                  <p class="size-btn">
+                    {{ product.weight }}
+                  </p>
+                </div>
               </div>
-
-            </div>
-            
             </div>
 
-      
             <div class="purchase-actions">
-
               <div class="quantity-control">
-
                 <button class="quantity-btn" (click)="decreaseQty()" [disabled]="quantity <= 0">
-                  
                   -
-                
                 </button>
 
-                <span class="quantity-value"> {{quantity}}</span>
+                <span class="quantity-value"> {{ quantity }}</span>
                 <button class="quantity-btn" (click)="increaseQty()">+</button>
-
               </div>
 
-              <button (click)="addToCart()" type="button" class="add-cart-btn">
-                Add to cart
-              </button>
+              <button (click)="addToCart()" type="button" class="add-cart-btn">Add to cart</button>
 
-              <button
-                type="button"
-                class="wishlist-btn"
-                aria-label="Add to wishlist"
-              >
-                ♡
-              </button>
-
+              <button type="button" class="wishlist-btn" aria-label="Add to wishlist">♡</button>
             </div>
 
-    
             <div class="product-benefits">
               <span>Natural soy wax</span>
               <span>40+ hour burn</span>
@@ -107,18 +73,17 @@
             </div>
 
             <div class="product-details">
-
               <div class="detail-row">
                 <span>Scent notes</span>
                 <span>
-                    {{product.fragrance_notes}}
+                  {{ product.fragrance_notes }}
                 </span>
               </div>
 
               <div class="detail-row">
                 <span>Burn & care</span>
                 <span>
-                    {{product.burn_time}}
+                  {{ product.burn_time }}
                 </span>
               </div>
 
@@ -126,61 +91,38 @@
                 <span>Shipping & returns</span>
                 <span>3–5 days</span>
               </div>
-
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
 
-
     <section class="container related-section">
-
       <div class="section-heading">
         <h2>You may also like</h2>
         <a routerLink="/shop">View all</a>
       </div>
 
       <div class="row g-3">
+        @for (item of relatedProduct; track item.product_id) {
+          <div class="col-6 col-md-3">
+            <a class="related-card" [routerLink]="['/product', product.product_id]">
+              <div class="related-image">
+                <img [src]="item.image" [alt]="item.product_name" />
+              </div>
 
-       @for (item of relatedProduct; track item.product_id) {
+              <h3>{{ item.product_name }}</h3>
 
-  <div class="col-6 col-md-3">
-
-    <a
-      class="related-card"
-      [routerLink]="['/product', product.product_id]"
-    >
-
-      <div class="related-image">
-        <img
-          [src]="item.image"
-          [alt]="item.product_name"
-        />
+              <p>${{ item.price }}</p>
+            </a>
+          </div>
+        }
       </div>
-
-      <h3>{{ item.product_name }}</h3>
-
-      <p>${{ item.price }}</p>
-
-    </a>
-
-  </div>
-
-}
-
-</div>
     </section>
-
   </div>
-
 } @else {
-
   <div class="container not-found">
     <h2>Product not found</h2>
     <a routerLink="/shop">Back to shop</a>
   </div>
-
 }

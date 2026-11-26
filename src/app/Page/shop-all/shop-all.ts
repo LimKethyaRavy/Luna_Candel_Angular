@@ -3,9 +3,11 @@ import { NavbarComponents } from '../../Components/navbar-components/navbar-comp
 import { Product, products } from '../../data/product';
 import { RouterLink } from '@angular/router';
 import { Cart } from '../../services/cart';
+import { CurrencyPipe } from '@angular/common';
+import { TokhrPipe } from '../../pipes/tokhr-pipe';
 @Component({
   selector: 'app-shop-all',
-  imports: [NavbarComponents, RouterLink],
+  imports: [NavbarComponents, RouterLink, CurrencyPipe, TokhrPipe],
   templateUrl: './shop-all.html',
   styleUrl: './shop-all.css',
 })
