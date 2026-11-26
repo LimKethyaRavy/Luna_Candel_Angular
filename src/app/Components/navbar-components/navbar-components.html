@@ -57,8 +57,9 @@
 
         <li class="nav-item">
           <a class="nav-link" routerLink="/"
-          [class.active] ="isActiveLink('home')"
-          (click)="OnSelectLink('home')"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="closeMenu()"
           >
             Home
           </a>
@@ -66,8 +67,9 @@
 
         <li class="nav-item">
           <a class="nav-link" routerLink="/shop"
-          [class.active] ="isActiveLink('shop')"
-           (click)="OnSelectLink('shop')"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="closeMenu()"
           >
             Shop All
           </a>
@@ -75,8 +77,9 @@
 
         <li class="nav-item">
           <a class="nav-link" routerLink="/about-us"
-          [class.active] ="isActiveLink('about-us')"
-          (click)="OnSelectLink('about-us')"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="closeMenu()"
           >
             About Us
           </a>
@@ -84,8 +87,9 @@
 
            <li class="nav-item">
           <a class="nav-link" routerLink="/contact"
-          [class.active] ="isActiveLink('contact')"
-          (click)="OnSelectLink('contact')"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="closeMenu()"
           > 
            Contact
           </a>
@@ -93,7 +97,7 @@
 
       </ul>
 
- 
+<!--  
       <form class="luna-search-form d-none d-lg-flex">
         <input
           type="search"
@@ -105,14 +109,14 @@
         <button type="submit" aria-label="Search">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
-      </form>
+      </form> -->
 
 
       <div class="navbar-actions d-none d-lg-flex">
-
+<!-- 
         <a href="/account" class="nav-icon" aria-label="Account">
           <i class="fa-regular fa-user"></i>
-        </a>
+        </a> -->
 
         <a routerLink="/cart" class="nav-icon" aria-label="Shopping cart">
           <i class="fa-solid fa-bag-shopping"></i>

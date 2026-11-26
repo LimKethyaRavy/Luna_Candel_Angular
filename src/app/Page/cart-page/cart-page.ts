@@ -20,6 +20,7 @@ export class CartPage {
  
  cartItem$ = this.cart.cartItem$;
  cartTotal$ = this.cart.cartTotal$;
+ orderProcessing = false;
 
 
  increaseQty(item: Cart_Data) {
@@ -47,9 +48,22 @@ removeItem(item: Cart_Data) {
     }
   });
 
+  
 
 
 
+}
+
+checkoutSuccess(): void {
+  this.cart.clearCart();
+  this.orderProcessing = true;
+
+  Swal.fire({
+    title: 'Order received',
+    text: 'Your order is being processed.',
+    icon: 'success',
+    confirmButtonText: 'OK'
+  });
 }
 
 

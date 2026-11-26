@@ -9,6 +9,11 @@
 
     <h1 class="serif-heading mb-4">Your cart</h1>
 
+    @if (orderProcessing) {
+      <div class="alert alert-success mb-4" role="status">
+        Your order is being processed. Thank you for your purchase!
+      </div>
+    }
 
     <div class="shipping-banner p-3 mb-4 rounded-3">
       <p class="mb-2 small text-dark fw-medium">
@@ -120,7 +125,8 @@
 
           </div>
 
-          <button type="button" class="btn btn-terracotta w-100 rounded-pill py-3 fw-medium mb-3">
+          <button type="button" class="btn btn-terracotta w-100 rounded-pill py-3 fw-medium mb-3"
+                  (click)="checkoutSuccess()">
             Checkout
           </button>
 

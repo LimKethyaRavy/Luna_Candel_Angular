@@ -43,6 +43,11 @@ export class Cart {
     
   }
 
+  clearCart(): void {
+    this.cartItem = [];
+    this.cartSubject.next([]);
+  }
+
   updateQuantity(product_id: number, quantity: number) {
 
     if(quantity <= 0) {

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+.luna-contact-page {
+  --bg-cream: #f5f2ec;
+  --surface-card: #f7f4ef;
+  --text-primary: #23211e;
+  --text-muted: #6e6a63;
+  --accent-bronze: #9a5b28;
+  --accent-bronze-hover: #824b1f;
+
+  background-color: #ffffff;
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+}
+
+/* Header Banner */
+.contact-header {
+  background-color: var(--bg-cream);
+  padding: 3.5rem 1rem 3rem;
+}
+
+.editorial-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.contact-heading {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.body-muted {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+/* Main Content Area */
+.contact-content {
+  padding: 3rem 0 4rem;
+}
+
+/* Left Info Cards */
+.info-card {
+  background-color: var(--surface-card);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+
+.info-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #7c766d;
+}
+
+.info-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.info-link {
+  text-decoration: none;
+}
+
+.info-link:hover {
+  text-decoration: underline;
+}
+
+.hours-day,
+.hours-time {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Sample Map Container */
+.sample-map-box {
+  background-color: #e7e2d8;
+  border-radius: 14px;
+  min-height: 430px;
+  overflow: hidden;
+}
+
+/* Decorative Sample Map Geometry */
+.map-park {
+  position: absolute;
+  background-color: #dde3d7;
+  border-radius: 10px;
+}
+
+.map-park-top {
+  width: 24%;
+  height: 18%;
+  top: 29%;
+  left: 9%;
+}
+
+.map-park-bottom {
+  width: 22%;
+  height: 20%;
+  bottom: 15%;
+  right: 11%;
+}
+
+.map-road {
+  position: absolute;
+  background-color: #f7f5f0;
+}
+
+.map-road-v-main {
+  width: 10px;
+  height: 100%;
+  top: 0;
+  left: 52%;
+}
+
+.map-road-v-right {
+  width: 8px;
+  height: 100%;
+  top: 0;
+  left: 81%;
+}
+
+.map-road-h-main {
+  width: 100%;
+  height: 10px;
+  top: 67%;
+  left: 0;
+}
+
+.map-road-h-diag {
+  width: 65%;
+  height: 7px;
+  top: 37%;
+  left: 0;
+  transform: rotate(-8deg);
+  transform-origin: left center;
+}
+
+/* Floating Studio Card */
+.map-callout {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.94);
+  border-radius: 10px;
+  padding: 0.65rem 0.9rem;
+  box-shadow: 0 6px 20px rgba(35, 33, 30, 0.08);
+}
+
+.map-callout-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.map-callout-sub {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Center Pin */
+.map-pin-wrapper {
+  position: absolute;
+  top: 55%;
+  left: 53.2%;
+  transform: translate(-50%, -100%);
+  z-index: 2;
+}
+
+.map-pin {
+  width: 34px;
+  height: 34px;
+  background-color: var(--accent-bronze);
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 14px rgba(35, 33, 30, 0.22);
+}
+
+.map-pin-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+.map-cta-btn {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+  background-color: var(--accent-bronze);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(35, 33, 30, 0.14);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.map-cta-btn:hover {
+  background-color: var(--accent-bronze-hover);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 991.98px) {
+  .sample-map-box {
+    min-height: 340px;
+  }
+}
+.sample-map-box {
+  background-color: #e7e2d8;
+  border-radius: 14px;
+  min-height: 430px;
+  overflow: hidden;
+}
+
+.google-map-iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 991.98px) {
+  .sample-map-box,
+  .google-map-iframe {
+    min-height: 340px;
+  }
+}
